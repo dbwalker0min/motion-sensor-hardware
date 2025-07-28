@@ -52,7 +52,20 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|99130000|95136000|3e708946-99a1-4437-802b-a41a3d115f66|00000000-0000-0000-0000-000000000000",
+          "Bullshit warning..."
+        ],
+        [
+          "silk_edge_clearance|108143320|76674600|89a00486-20a1-4c30-aa0a-f3acb4a1b4c1|911587aa-af38-472c-b980-c80d523c2f62",
+          ""
+        ],
+        [
+          "silk_edge_clearance|90160120|76674600|89a00486-20a1-4c30-aa0a-f3acb4a1b4c1|3878958e-fe3a-407d-b848-c42696915fbf",
+          "ESP32 close to board edge"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -450,7 +463,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "motion-sensor.kicad_pro",
+    "filename": "motion-sensor-hardware.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -504,7 +517,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Production/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
