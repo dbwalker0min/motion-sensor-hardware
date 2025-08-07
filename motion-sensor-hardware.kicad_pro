@@ -643,6 +643,10 @@
     [
       "d999e802-7382-49ed-b28b-80393e8497d9",
       "Root"
+    ],
+    [
+      "20280cc7-411e-41b1-8687-9a48928895ed",
+      "Voltage Regulator"
     ]
   ],
   "text_variables": {}
