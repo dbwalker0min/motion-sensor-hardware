@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "f7e49ed0-e002-492f-a8a4-84e8a5e5128d")
+	(uuid "ccd116de-8d36-436c-af1d-ac1728fd902a")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:C"
@@ -430,7 +430,185 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "motion-sensor-syms:IC_LT8607_ANALOG"
+		(symbol "Regulator_Linear:TLV73333PDBV"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TLV73333PDBV"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv733p.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "300mA Capacitor-Free Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "300mA LDO Regulator Fixed Positive Capacitor-Free"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TLV73333PDBV_0_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TLV73333PDBV_1_1"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "motion-sensor-syms:IC_LT860xxMSE_ANALOG"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -479,7 +657,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "IC_LT8607_ANALOG_0_0"
+			(symbol "IC_LT860xxMSE_ANALOG_0_0"
 				(pin power_in line
 					(at -10.16 10.16 0)
 					(length 2.54)
@@ -643,7 +821,7 @@
 					)
 				)
 			)
-			(symbol "IC_LT8607_ANALOG_1_0"
+			(symbol "IC_LT860xxMSE_ANALOG_1_0"
 				(pin open_collector line
 					(at 10.16 -2.54 180)
 					(length 2.54)
@@ -663,7 +841,7 @@
 					)
 				)
 			)
-			(symbol "IC_LT8607_ANALOG_1_1"
+			(symbol "IC_LT860xxMSE_ANALOG_1_1"
 				(rectangle
 					(start -7.62 12.7)
 					(end 7.62 -15.24)
@@ -831,9 +1009,9 @@
 		)
 		(uuid "aa4dc3a7-9f80-4a00-80fb-9dec0c379025")
 	)
-	(text "V_{OUT} is 3.3 V. V_{REF} is 778 mV"
+	(text "V_{OUT} is 5 V\nV_{REF} is 778 mV"
 		(exclude_from_sim no)
-		(at 161.29 60.96 0)
+		(at 139.7 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -864,6 +1042,12 @@
 		(uuid "f671b8b3-c3ad-4940-be5d-10a6be590b8c")
 	)
 	(junction
+		(at 160.02 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "308f1266-6c0c-4f17-a4a1-4c215d745b18")
+	)
+	(junction
 		(at 148.59 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -874,6 +1058,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c8a328e-a69d-47eb-9d0a-dcc53488846d")
+	)
+	(junction
+		(at 179.07 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61c530c7-db66-4e79-96be-fbee061ce259")
 	)
 	(junction
 		(at 71.12 71.12)
@@ -893,12 +1083,6 @@
 		(color 0 0 0 0)
 		(uuid "e4c8326e-ee52-4e74-8f6d-740bb7758b34")
 	)
-	(junction
-		(at 160.02 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f10c3738-126e-4c63-8339-93561b71c8f6")
-	)
 	(no_connect
 		(at 124.46 83.82)
 		(uuid "c0e1b5e7-6c5d-4ee6-8fc0-ada5acc145e7")
@@ -916,6 +1100,16 @@
 			(type default)
 		)
 		(uuid "285c61c9-e150-444e-8db7-bf0855ca82a4")
+	)
+	(wire
+		(pts
+			(xy 179.07 78.74) (xy 179.07 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab0dac4-f5dc-403f-9e2d-5b496a3066e7")
 	)
 	(wire
 		(pts
@@ -1099,16 +1293,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 78.74) (xy 166.37 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bedab448-52a0-4e0c-afc1-ceb39611844d")
-	)
-	(wire
-		(pts
 			(xy 104.14 88.9) (xy 87.63 88.9)
 		)
 		(stroke
@@ -1197,18 +1381,17 @@
 		)
 		(uuid "fa2b210e-a438-4752-bbba-9000dcfca728")
 	)
-	(hierarchical_label "V_{OUT}"
-		(shape input)
-		(at 166.37 78.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 160.02 78.74) (xy 179.07 78.74)
 		)
-		(uuid "e68367a1-13c5-4b19-bf90-a2e40675bfda")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc74d0d1-eea3-4609-993c-03d57ae783a4")
 	)
-	(hierarchical_label "V_{IN}"
+	(hierarchical_label "VIN"
 		(shape input)
 		(at 64.77 71.12 180)
 		(effects
@@ -1644,7 +1827,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "18.2k"
+		(property "Value" "18.7k"
 			(at 151.13 95.2499 0)
 			(effects
 				(font
@@ -1976,6 +2159,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:TLV73333PDBV")
+		(at 186.69 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9504360e-c40a-4802-9011-299edc0231e5")
+		(property "Reference" "U4"
+			(at 186.69 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV73333PDBV"
+			(at 186.69 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 186.69 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv733p.pdf"
+			(at 186.69 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "300mA Capacitor-Free Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+			(at 186.69 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "2ddda961-5712-434b-a3f9-d3183d896567")
+		)
+		(pin "1"
+			(uuid "4bfad0aa-7e9f-4e8c-8c1e-5000e8ee4295")
+		)
+		(pin "5"
+			(uuid "9edcf865-b0a7-4de9-8a98-71573f1ba476")
+		)
+		(pin "3"
+			(uuid "b733e926-8983-42ee-bdba-41618b835279")
+		)
+		(pin "2"
+			(uuid "f4ccb6da-fd5a-4d4f-a9d5-804d73c716bf")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 130.81 74.93 0)
 		(unit 1)
@@ -2116,7 +2377,7 @@
 		)
 	)
 	(symbol
-		(lib_id "motion-sensor-syms:IC_LT8607_ANALOG")
+		(lib_id "motion-sensor-syms:IC_LT860xxMSE_ANALOG")
 		(at 114.3 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2133,7 +2394,7 @@
 				)
 			)
 		)
-		(property "Value" "LT8607"
+		(property "Value" "LT8608EMSE"
 			(at 114.3 66.04 0)
 			(effects
 				(font
@@ -2205,6 +2466,72 @@
 			(project ""
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6ffc76b-c27d-45ec-ad06-99e724491b82")
+		(property "Reference" "#PWR033"
+			(at 186.69 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab080eb7-2fa3-4d5c-8dba-ffd9beb6951e")
+		)
+		(instances
+			(project "motion-sensor-hardware"
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -2295,7 +2622,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "59.0k"
+		(property "Value" "102k"
 			(at 151.13 85.0899 0)
 			(effects
 				(font

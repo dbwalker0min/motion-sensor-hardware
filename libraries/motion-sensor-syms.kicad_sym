@@ -1839,7 +1839,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "IC_LT8607_ANALOG"
+	(symbol "IC_LT860xxMSE_ANALOG"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1888,7 +1888,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "IC_LT8607_ANALOG_0_0"
+		(symbol "IC_LT860xxMSE_ANALOG_0_0"
 			(pin power_in line
 				(at -10.16 10.16 0)
 				(length 2.54)
@@ -2052,7 +2052,7 @@
 				)
 			)
 		)
-		(symbol "IC_LT8607_ANALOG_1_0"
+		(symbol "IC_LT860xxMSE_ANALOG_1_0"
 			(pin open_collector line
 				(at 10.16 -2.54 180)
 				(length 2.54)
@@ -2072,7 +2072,7 @@
 				)
 			)
 		)
-		(symbol "IC_LT8607_ANALOG_1_1"
+		(symbol "IC_LT860xxMSE_ANALOG_1_1"
 			(rectangle
 				(start -7.62 12.7)
 				(end 7.62 -15.24)
