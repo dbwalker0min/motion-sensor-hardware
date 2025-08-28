@@ -52,20 +52,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|99130000|95136000|3e708946-99a1-4437-802b-a41a3d115f66|00000000-0000-0000-0000-000000000000",
-          "Bullshit warning..."
-        ],
-        [
-          "silk_edge_clearance|108143320|76674600|89a00486-20a1-4c30-aa0a-f3acb4a1b4c1|911587aa-af38-472c-b980-c80d523c2f62",
-          ""
-        ],
-        [
-          "silk_edge_clearance|90160120|76674600|89a00486-20a1-4c30-aa0a-f3acb4a1b4c1|3878958e-fe3a-407d-b848-c42696915fbf",
-          "ESP32 close to board edge"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -487,6 +474,12 @@
         "wire_width": 6
       },
       {
+        "name": "90Ω",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -494,7 +487,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgb(204, 102, 0)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -523,6 +516,15 @@
       ],
       "/USB1-": [
         "90Ω"
+      ],
+      "/VRAW": [
+        "Power"
+      ],
+      "/Voltage Regulator/VIN": [
+        "Power"
+      ],
+      "Net-(D5-A2)": [
+        "Power"
       ],
       "VIN": [
         "Power"
@@ -611,12 +613,36 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB",
+          "name": "JLCPCB",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
