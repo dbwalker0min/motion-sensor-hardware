@@ -12749,15 +12749,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLPCB" ""
-			(at 36.83 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "A7"
 			(uuid "088b34ae-5a0e-46f0-ba55-26c13488d49a")
 		)
