@@ -5,6 +5,928 @@
 	(uuid "f7e49ed0-e002-492f-a8a4-84e8a5e5128d")
 	(paper "A4")
 	(lib_symbols
+		(symbol "!Capacitor-0603:100nF_X7R_50V"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 2.032 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF"
+				(at 2.032 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100nF 50V X7R ±10%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tempco" "X7R"
+				(at 2.032 -3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 2.032 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Package" "603"
+				(at 2.032 -5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB" "C14663"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor basic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "100nF_X7R_50V_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "100nF_X7R_50V_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "!Capacitor-0805:10uF_X5R_50V"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 2.032 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10uF"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411041759_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "10uF 50V X5R ±10%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tempco" "X5R"
+				(at 2.032 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 2.032 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Package" "805"
+				(at 2.032 -3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "JLCPCB" "C440198"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Unnamed: 4" "nan"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor basic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "10uF_X5R_50V_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "10uF_X5R_50V_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "!Capacitor-1206:47uF_X5R_10V"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 2.032 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "47uF"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "47uF 10V X5R ±20%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tempco" "X5R"
+				(at 2.032 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Voltage" "10V"
+				(at 2.032 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Package" "1206"
+				(at 2.032 -3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "JLCPCB" "C96123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Tolerance" "±20%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor basic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "47uF_X5R_10V_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "47uF_X5R_10V_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "!Inductor-Power:FXL0630-6R8-M"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FXL0630-6R8-M"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Inductor_SMD:L_Changjiang_FXL0630"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8608737232124080128"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "48mΩ 5A 6.8uH 5A Molded Inductor ±20% SMD,7x6.6mm Power Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB" "C167221"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FXL0630-6R8-M_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FXL0630-6R8-M_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "!Power Management:AP62200TWU-7"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AP62200TWU-7"
+				(at 0 11.176 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 5.08 -17.272 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560089911954341888"
+				(at 5.08 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Buck Switching Regulator IC Positive Adjustable 0.8V 1 Output 2A SOT-23-6 Thin, TSOT-23-6"
+				(at 5.08 -13.208 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB" "C2895288"
+				(at 5.08 -19.304 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "AP62200TWU-7_0_0"
+				(pin power_in line
+					(at -7.62 7.62 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 180)
+					(length 2.54)
+					(name "BST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "AP62200TWU-7_1_1"
+				(rectangle
+					(start -5.08 10.16)
+					(end 5.08 -10.16)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "!Resistor-0603:15kΩ"
 			(pin_numbers
 				(hide yes)
@@ -745,492 +1667,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "motion-sensor-syms:ADP6220x"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 13.462 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AP62200TWU-7"
-				(at 0 11.176 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 5.08 -17.272 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8560089911954341888"
-				(at 5.08 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "-40℃~+125℃ 1 135uA 2A 4.2V~18V 750kHz 800mV~7V Adjustable Buck Buck Built-In Yes TSOT-26 DC-DC Converters ROHS"
-				(at 5.08 -13.208 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "JLCPCB" "C2895288"
-				(at 5.08 -19.304 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "ADP6220x_0_0"
-				(pin power_in line
-					(at -7.62 7.62 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 7.62 180)
-					(length 2.54)
-					(name "BST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -7.62 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "ADP6220x_0_1"
-				(rectangle
-					(start -5.08 -10.16)
-					(end 5.08 10.16)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -1613,10 +2049,22 @@
 		(uuid "f671b8b3-c3ad-4940-be5d-10a6be590b8c")
 	)
 	(junction
+		(at 113.03 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2669a55a-5bcf-4cc0-bd05-d09f63b13c01")
+	)
+	(junction
 		(at 67.31 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26c9c81b-8729-4838-b9ab-a9663a940a0e")
+	)
+	(junction
+		(at 113.03 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "270c9bee-a9a9-49b9-acef-92e9f4b84a4f")
 	)
 	(junction
 		(at 132.08 54.61)
@@ -1641,18 +2089,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a7d1da4-5b7f-4324-a2ba-309a4f087146")
-	)
-	(junction
-		(at 113.03 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6c540813-c6c3-4252-805f-6cbbbdaf850d")
-	)
-	(junction
-		(at 113.03 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97fb9a95-45a5-44b7-afd5-3e06d83b826c")
 	)
 	(junction
 		(at 78.74 83.82)
@@ -1714,16 +2150,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 91.44) (xy 92.71 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "097ed206-c1c9-4456-9673-4205ccf94e41")
-	)
-	(wire
-		(pts
 			(xy 110.49 46.99) (xy 113.03 46.99)
 		)
 		(stroke
@@ -1734,13 +2160,53 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 91.44) (xy 121.92 91.44)
+			(xy 88.9 97.79) (xy 88.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1518c374-b580-4ef5-9bbd-67f43a61506f")
+	)
+	(wire
+		(pts
+			(xy 113.03 54.61) (xy 121.92 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b3bed1e-36e0-4bd7-adae-20b46f43f7a7")
+	)
+	(wire
+		(pts
+			(xy 67.31 57.15) (xy 67.31 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24272cda-ee84-47f1-b6a6-ab1f177168f5")
+	)
+	(wire
+		(pts
+			(xy 110.49 91.44) (xy 113.03 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "24b07a95-6622-40a1-a5bd-c9c7a9b8e552")
+	)
+	(wire
+		(pts
+			(xy 88.9 54.61) (xy 95.25 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29818ff7-f454-42d5-a546-21b302c280d8")
 	)
 	(wire
 		(pts
@@ -1764,17 +2230,17 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 54.61) (xy 92.71 55.88)
+			(xy 113.03 46.99) (xy 113.03 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "360e4a45-1383-4e87-bd8b-e83da39065b3")
+		(uuid "387a3fbd-fa77-4232-93c8-22e1efd0348b")
 	)
 	(wire
 		(pts
-			(xy 78.74 59.69) (xy 78.74 58.42)
+			(xy 78.74 57.15) (xy 78.74 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1784,7 +2250,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 54.61) (xy 121.92 54.61)
+			(xy 110.49 54.61) (xy 113.03 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1834,17 +2300,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 102.87) (xy 156.21 105.41)
+			(xy 67.31 93.98) (xy 67.31 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e822c2c-18a7-47e3-a744-a01ae10a22bc")
+		(uuid "4d762448-2264-4362-9245-8b7a4145c786")
 	)
 	(wire
 		(pts
-			(xy 67.31 96.52) (xy 67.31 95.25)
+			(xy 67.31 83.82) (xy 67.31 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1854,7 +2320,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 96.52) (xy 78.74 95.25)
+			(xy 78.74 93.98) (xy 78.74 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1884,6 +2350,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 90.17) (xy 113.03 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a4b2eef-f46f-476c-b546-3121e36a7053")
+	)
+	(wire
+		(pts
 			(xy 78.74 83.82) (xy 67.31 83.82)
 		)
 		(stroke
@@ -1894,7 +2370,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 66.04) (xy 156.21 71.12)
+			(xy 144.78 100.33) (xy 144.78 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6997575e-b7a4-49b9-a924-90bc38bf7921")
+	)
+	(wire
+		(pts
+			(xy 156.21 63.5) (xy 156.21 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1944,16 +2430,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 83.82) (xy 67.31 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78a58f84-2bc7-4741-88bc-7e5aab8e5da7")
-	)
-	(wire
-		(pts
 			(xy 78.74 46.99) (xy 95.25 46.99)
 		)
 		(stroke
@@ -1961,16 +2437,6 @@
 			(type default)
 		)
 		(uuid "790ae6c3-3ff9-457f-9be0-f60c9d0a5f77")
-	)
-	(wire
-		(pts
-			(xy 110.49 91.44) (xy 113.03 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b800937-9ddc-4edc-b832-25115dee080d")
 	)
 	(wire
 		(pts
@@ -1984,13 +2450,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 91.44) (xy 92.71 93.98)
+			(xy 88.9 91.44) (xy 95.25 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "827015a5-b90b-499a-abe5-4464f3360f61")
+		(uuid "86f7fce2-338c-4906-a534-3773ed4d30ac")
 	)
 	(wire
 		(pts
@@ -2004,26 +2470,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 54.61) (xy 113.03 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "907097d6-4227-477f-aa3f-1cc1ad597218")
-	)
-	(wire
-		(pts
-			(xy 144.78 102.87) (xy 144.78 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "915a58ce-c097-4bf8-9236-18336c7462ec")
-	)
-	(wire
-		(pts
 			(xy 132.08 54.61) (xy 144.78 54.61)
 		)
 		(stroke
@@ -2034,13 +2480,23 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 59.69) (xy 67.31 58.42)
+			(xy 88.9 91.44) (xy 88.9 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a230eb2e-973b-4dfa-90fc-06b84b8fc1b5")
+		(uuid "9b447632-8f5a-4d34-a59d-3952cca3c928")
+	)
+	(wire
+		(pts
+			(xy 88.9 60.96) (xy 88.9 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a34150b9-6fce-4b4d-a9e4-9a67345394f1")
 	)
 	(wire
 		(pts
@@ -2051,6 +2507,26 @@
 			(type default)
 		)
 		(uuid "a7901590-7df0-4d26-a8ea-e8cbf4b41718")
+	)
+	(wire
+		(pts
+			(xy 156.21 100.33) (xy 156.21 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8f53ab7-920e-43cd-950b-f22858078d9e")
+	)
+	(wire
+		(pts
+			(xy 113.03 83.82) (xy 113.03 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2543884-1658-448a-a245-ed66c01d84a5")
 	)
 	(wire
 		(pts
@@ -2074,7 +2550,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 46.99) (xy 67.31 50.8)
+			(xy 67.31 46.99) (xy 67.31 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2114,16 +2590,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 54.61) (xy 92.71 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb60e4c9-f402-4ccd-bcf8-47dd8a02126f")
-	)
-	(wire
-		(pts
 			(xy 129.54 91.44) (xy 133.35 91.44)
 		)
 		(stroke
@@ -2131,6 +2597,16 @@
 			(type default)
 		)
 		(uuid "d3329a07-3444-4bfe-8031-1fc7490daf99")
+	)
+	(wire
+		(pts
+			(xy 113.03 53.34) (xy 113.03 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d60916c5-d429-4c23-8853-2480dbf75d37")
 	)
 	(wire
 		(pts
@@ -2164,7 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 66.04) (xy 144.78 71.12)
+			(xy 144.78 63.5) (xy 144.78 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2174,7 +2650,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 46.99) (xy 78.74 50.8)
+			(xy 113.03 91.44) (xy 121.92 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8d9336b-a9b2-433c-b446-046474940090")
+	)
+	(wire
+		(pts
+			(xy 78.74 46.99) (xy 78.74 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2194,7 +2680,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 83.82) (xy 78.74 87.63)
+			(xy 88.9 55.88) (xy 88.9 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5c1f465-8178-4c14-9921-396670ad39f6")
+	)
+	(wire
+		(pts
+			(xy 78.74 83.82) (xy 78.74 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2212,6 +2708,123 @@
 			(justify right)
 		)
 		(uuid "edc1af14-82ac-44e6-b910-69749d74a9f4")
+	)
+	(symbol
+		(lib_id "!Capacitor-0603:100nF_X7R_50V")
+		(at 78.74 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01027d78-7574-4fdf-a6ed-9c925761a2f4")
+		(property "Reference" "C4"
+			(at 81.28 89.0269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 81.28 91.5669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100nF 50V X7R ±10%"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X7R"
+			(at 80.772 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 81.28 94.1069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "603"
+			(at 80.772 96.774 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C14663"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ef63e33-b55d-4659-b280-7cc2c7acab33")
+		)
+		(pin "2"
+			(uuid "c64555da-d18c-49c8-ba14-701849309e2c")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2281,16 +2894,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 67.31 91.44 0)
+		(lib_id "!Capacitor-1206:47uF_X5R_10V")
+		(at 156.21 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0db3d0c5-08b8-4c8b-b573-4e04faa62ab7")
+		(fields_autoplaced yes)
+		(uuid "1c3a7172-9691-4061-be63-ed82226bf42b")
 		(property "Reference" "C15"
-			(at 71.12 90.1699 0)
+			(at 158.75 92.8369 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,8 +2912,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 71.12 92.7099 0)
+		(property "Value" "47uF"
+			(at 158.75 95.3769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2308,7 +2922,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 68.2752 95.25 0)
+			(at 156.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2316,8 +2930,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884955182718976"
-			(at 67.31 91.44 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123.pdf"
+			(at 156.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2325,8 +2939,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10uF 50V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 67.31 91.44 0)
+		(property "Description" "47uF 10V X5R ±20%"
+			(at 156.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2334,8 +2948,8 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
-			(at 71.12 95.25 0)
+		(property "Tempco" "X5R"
+			(at 158.75 97.9169 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2343,8 +2957,35 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C440198"
-			(at 67.31 91.44 0)
+		(property "Voltage" "10V"
+			(at 158.75 100.4569 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "1206"
+			(at 158.75 102.9969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB" "C96123"
+			(at 156.21 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±20%"
+			(at 156.21 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2353,13 +2994,13 @@
 			)
 		)
 		(pin "2"
-			(uuid "0c806065-8b06-446f-8560-330213dbc6fa")
+			(uuid "fbf27f98-3b3c-4fe7-9826-35e59eeef94d")
 		)
 		(pin "1"
-			(uuid "ed4b1d28-5569-46bf-9ee4-49d79bea14b7")
+			(uuid "0cd33ced-4dab-4de8-b2ec-fc7bf6afba41")
 		)
 		(instances
-			(project "motion-sensor-hardware"
+			(project ""
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
 					(reference "C15")
 					(unit 1)
@@ -2368,16 +3009,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 156.21 99.06 0)
+		(lib_id "!Capacitor-0603:100nF_X7R_50V")
+		(at 78.74 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "257e79b2-378e-4603-b749-d9d741a099dd")
-		(property "Reference" "C17"
-			(at 160.02 97.7899 0)
+		(fields_autoplaced yes)
+		(uuid "4109b362-1bbf-4159-8e68-483ad0d28e65")
+		(property "Reference" "C2"
+			(at 81.28 52.1969 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2385,8 +3027,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
-			(at 160.02 100.3299 0)
+		(property "Value" "100nF"
+			(at 81.28 54.7369 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2394,8 +3036,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 157.1752 102.87 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 78.74 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2403,8 +3045,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178594430701568"
-			(at 156.21 99.06 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 78.74 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2412,8 +3054,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "47uF 6.3V X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 156.21 99.06 0)
+		(property "Description" "100nF 50V X7R ±10%"
+			(at 78.74 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2421,8 +3063,18 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "6.3V"
-			(at 160.02 102.87 0)
+		(property "Tempco" "X7R"
+			(at 80.772 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 81.28 57.2769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2430,8 +3082,18 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C16780"
-			(at 156.21 99.06 0)
+		(property "Package" "603"
+			(at 80.772 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C14663"
+			(at 78.74 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2439,16 +3101,25 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "7fea61c8-b4dd-4f68-b2ae-da2b9929f3ec")
+		(property "Tolerance" "±10%"
+			(at 78.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "cf5f876b-9b61-4d49-b095-f540acd668a5")
+			(uuid "6ef63e33-b55d-4659-b280-7cc2c7acab34")
+		)
+		(pin "2"
+			(uuid "c64555da-d18c-49c8-ba14-701849309e2d")
 		)
 		(instances
-			(project "motion-sensor-hardware"
+			(project ""
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C17")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -2656,94 +3327,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 113.03 87.63 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5baafc89-0338-43b3-ae8c-e846f3a2b665")
-		(property "Reference" "C4"
-			(at 116.84 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 116.84 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 112.0648 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 113.03 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C106837"
-			(at 113.03 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLPCB" ""
-			(at 113.03 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "383d7ccb-1837-4a14-b036-1c9ff4044701")
-		)
-		(pin "1"
-			(uuid "35082690-7538-465a-bd54-4c6a92d3506b")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "!Resistor-0603:49.9kΩ")
 		(at 133.35 95.25 0)
 		(unit 1)
@@ -2861,7 +3444,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
+		(lib_id "!Inductor-Power:FXL0630-6R8-M")
 		(at 125.73 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2870,19 +3453,21 @@
 		(dnp no)
 		(uuid "5ceffe86-c08c-47f7-b364-5127c2330fd8")
 		(property "Reference" "L1"
-			(at 125.73 49.53 90)
+			(at 122.555 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "6.8uH"
-			(at 125.73 52.07 90)
+		(property "Value" "FXL0630-6R8-M"
+			(at 122.555 52.705 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_Changjiang_FXL0630"
@@ -2903,7 +3488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "48mΩ 5A 6.8uH 6A Molded Inductor ±20% SMD,6.6x7mm Power Inductors ROHS"
+		(property "Description" "48mΩ 5A 6.8uH 5A Molded Inductor ±20% SMD,7x6.6mm Power Inductor"
 			(at 125.73 54.61 0)
 			(effects
 				(font
@@ -2913,20 +3498,12 @@
 			)
 		)
 		(property "JLCPCB" "C167221"
-			(at 125.73 54.61 90)
+			(at 125.73 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "PN" "FXL0630-6R8-M"
-			(at 121.92 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -2945,122 +3522,36 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 144.78 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "69236ad6-e03a-4a46-a7d4-fdb686b01a1d")
-		(property "Reference" "C12"
-			(at 148.59 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47u"
-			(at 148.59 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 145.7452 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178594430701568"
-			(at 144.78 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "47uF 6.3V X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 144.78 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "6.3V"
-			(at 148.59 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "JLCPCB" "C16780"
-			(at 144.78 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fc839225-62f1-452d-b78d-78a638e9e922")
-		)
-		(pin "1"
-			(uuid "b435786f-e0a9-4cfc-9de4-cbfcbf71fe35")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 92.71 59.69 0)
-		(mirror x)
+		(lib_id "!Capacitor-0603:100nF_X7R_50V")
+		(at 88.9 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(uuid "746373ad-e83e-478c-a9d5-f0df67945971")
-		(property "Reference" "C13"
-			(at 88.9 58.4199 0)
+		(fields_autoplaced yes)
+		(uuid "685affb1-33b7-4410-9bae-5761a8027b37")
+		(property "Reference" "C11"
+			(at 91.44 56.0069 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 88.9 60.9599 0)
+		(property "Value" "100nF"
+			(at 91.44 58.5469 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 93.6752 55.88 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,8 +3559,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 92.71 59.69 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,8 +3568,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 92.71 59.69 0)
+		(property "Description" "100nF 50V X7R ±10%"
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,8 +3577,37 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C106837"
-			(at 92.71 59.69 0)
+		(property "Tempco" "X7R"
+			(at 90.932 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 91.44 61.0869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "603"
+			(at 90.932 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C14663"
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,16 +3615,25 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "ad4267d5-22d4-460e-b9b1-746c76881b20")
+		(property "Tolerance" "±10%"
+			(at 88.9 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "412a323b-81f5-4749-ac7f-76fb8ac7d414")
+			(uuid "74f91e5c-2ae4-4201-ac53-6344c1d18e69")
+		)
+		(pin "2"
+			(uuid "6bd4b10a-9588-4c59-8d93-b0920df7c1b0")
 		)
 		(instances
 			(project "motion-sensor-hardware"
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C13")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -3239,94 +3768,6 @@
 			(project "motion-sensor-hardware"
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 78.74 91.44 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "769a97c7-32cc-458f-b47b-98f78033d26a")
-		(property "Reference" "C11"
-			(at 82.55 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 82.55 92.7099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 77.7748 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 78.74 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C106837"
-			(at 78.74 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLPCB" ""
-			(at 78.74 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4a1ead7f-3e1a-413d-8e7e-98d1ced90089")
-		)
-		(pin "1"
-			(uuid "9f62af10-b60f-46da-ad52-d9f43056d32f")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -3568,7 +4009,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 101.6 0)
+		(at 88.9 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3577,7 +4018,7 @@
 		(fields_autoplaced yes)
 		(uuid "81fef4e1-aa0e-4831-9cc3-d7cdc9c33273")
 		(property "Reference" "#PWR045"
-			(at 92.71 107.95 0)
+			(at 88.9 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3586,7 +4027,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 106.68 0)
+			(at 88.9 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3595,7 +4036,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 101.6 0)
+			(at 88.9 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3604,7 +4045,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 101.6 0)
+			(at 88.9 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3613,7 +4054,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 101.6 0)
+			(at 88.9 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,268 +4075,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 67.31 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8291d8ed-60d6-41e5-a0e8-85ee121dfd5f")
-		(property "Reference" "C6"
-			(at 71.12 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 71.12 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 68.2752 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588884955182718976"
-			(at 67.31 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 67.31 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "50V"
-			(at 71.12 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "JLCPCB" "C440198"
-			(at 67.31 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ceef5cd8-01df-4946-a58e-b3f02ca99ccf")
-		)
-		(pin "1"
-			(uuid "f227b534-f480-4c8b-9ee9-0f47791cca34")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 156.21 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "917d7b69-c876-4816-8eb8-3157f1e79a28")
-		(property "Reference" "C16"
-			(at 160.02 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47u"
-			(at 160.02 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 157.1752 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178935554256896"
-			(at 156.21 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 156.21 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C96123"
-			(at 156.21 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 160.02 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "660795fa-62e6-4747-b416-8138c7c9e77c")
-		)
-		(pin "1"
-			(uuid "e93f72f8-5925-48ee-baa5-be6695f7f04d")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 144.78 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "94882dcb-e479-4e57-b97b-25454373e391")
-		(property "Reference" "C3"
-			(at 148.59 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47u"
-			(at 148.59 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 145.7452 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586178935554256896"
-			(at 144.78 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 144.78 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C96123"
-			(at 144.78 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 148.59 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "2efdd404-f496-464e-85f5-5592946e0022")
-		)
-		(pin "1"
-			(uuid "96c67b0b-2774-4e2a-b03c-9f8455cc8887")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
+		(lib_id "!Inductor-Power:FXL0630-6R8-M")
 		(at 125.73 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3904,15 +4084,15 @@
 		(dnp no)
 		(uuid "95e4a2e5-6de6-4ede-89fa-1146a6cfab0e")
 		(property "Reference" "L2"
-			(at 125.73 86.36 90)
+			(at 125.095 86.995 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "6.8uH"
-			(at 125.73 88.9 90)
+		(property "Value" "FXL0630-6R8-M"
+			(at 132.08 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,7 +4117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "48mΩ 5A 6.8uH 6A Molded Inductor ±20% SMD,6.6x7mm Power Inductors ROHS"
+		(property "Description" "48mΩ 5A 6.8uH 5A Molded Inductor ±20% SMD,7x6.6mm Power Inductor"
 			(at 125.73 91.44 0)
 			(effects
 				(font
@@ -3947,20 +4127,12 @@
 			)
 		)
 		(property "JLCPCB" "C167221"
-			(at 125.73 91.44 90)
+			(at 125.73 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "PN" "FXL0630-6R8-M"
-			(at 121.92 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -3973,94 +4145,6 @@
 			(project "motion-sensor-hardware"
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
 					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 78.74 54.61 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a59f883-f898-4730-b205-2209624fdb66")
-		(property "Reference" "C5"
-			(at 82.55 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 82.55 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 77.7748 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 78.74 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C106837"
-			(at 78.74 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLPCB" ""
-			(at 78.74 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "acfc702e-9230-4609-80c5-58acc15575c5")
-		)
-		(pin "1"
-			(uuid "06ddca9a-eea8-4087-8400-65588b530291")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -4127,6 +4211,123 @@
 			(project "motion-sensor-hardware"
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "!Capacitor-0603:100nF_X7R_50V")
+		(at 113.03 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a960eac4-a226-486b-906d-6f989624b2ba")
+		(property "Reference" "C5"
+			(at 115.57 85.2169 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 115.57 87.7569 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100nF 50V X7R ±10%"
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X7R"
+			(at 115.062 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 115.57 90.2969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "603"
+			(at 115.062 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C14663"
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 113.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ef63e33-b55d-4659-b280-7cc2c7acab35")
+		)
+		(pin "2"
+			(uuid "c64555da-d18c-49c8-ba14-701849309e2e")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -4267,6 +4468,351 @@
 		)
 	)
 	(symbol
+		(lib_id "!Capacitor-1206:47uF_X5R_10V")
+		(at 156.21 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3541f4d-db1f-4cfe-b40f-3bdaa2ff360b")
+		(property "Reference" "C18"
+			(at 158.75 56.0069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 158.75 58.5469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 156.21 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123.pdf"
+			(at 156.21 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "47uF 10V X5R ±20%"
+			(at 156.21 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X5R"
+			(at 158.75 61.0869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 158.75 63.6269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "1206"
+			(at 158.75 66.1669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB" "C96123"
+			(at 156.21 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±20%"
+			(at 156.21 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fbf27f98-3b3c-4fe7-9826-35e59eeef94e")
+		)
+		(pin "1"
+			(uuid "0cd33ced-4dab-4de8-b2ec-fc7bf6afba42")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "!Capacitor-1206:47uF_X5R_10V")
+		(at 144.78 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf5987c7-31c8-460f-adec-5e7f99b84b75")
+		(property "Reference" "C17"
+			(at 147.32 56.0069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 147.32 58.5469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123.pdf"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "47uF 10V X5R ±20%"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X5R"
+			(at 147.32 61.0869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 147.32 63.6269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "1206"
+			(at 147.32 66.1669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB" "C96123"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±20%"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fbf27f98-3b3c-4fe7-9826-35e59eeef94f")
+		)
+		(pin "1"
+			(uuid "0cd33ced-4dab-4de8-b2ec-fc7bf6afba43")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "!Capacitor-1206:47uF_X5R_10V")
+		(at 144.78 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4f29bd2-55b5-4dda-8850-b96c4eb2cc92")
+		(property "Reference" "C12"
+			(at 147.32 92.8369 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47uF"
+			(at 147.32 95.3769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123.pdf"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "47uF 10V X5R ±20%"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X5R"
+			(at 147.32 97.9169 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 147.32 100.4569 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "1206"
+			(at 147.32 102.9969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB" "C96123"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±20%"
+			(at 144.78 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fbf27f98-3b3c-4fe7-9826-35e59eeef950")
+		)
+		(pin "1"
+			(uuid "0cd33ced-4dab-4de8-b2ec-fc7bf6afba44")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 67.31 96.52 0)
 		(unit 1)
@@ -4334,7 +4880,7 @@
 		)
 	)
 	(symbol
-		(lib_id "motion-sensor-syms:ADP6220x")
+		(lib_id "!Power Management:AP62200TWU-7")
 		(at 102.87 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4379,7 +4925,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-40℃~+125℃ 1 135uA 2A 4.2V~18V 750kHz 800mV~7V Adjustable Buck Buck Built-In Yes TSOT-26 DC-DC Converters ROHS"
+		(property "Description" "Buck Switching Regulator IC Positive Adjustable 0.8V 1 Output 2A SOT-23-6 Thin, TSOT-23-6"
 			(at 107.95 67.818 0)
 			(effects
 				(font
@@ -4421,6 +4967,124 @@
 			(project ""
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "!Capacitor-0603:100nF_X7R_50V")
+		(at 88.9 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "cd32564a-8669-4629-8c1b-fd79746e7458")
+		(property "Reference" "C13"
+			(at 91.44 92.8369 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "100nF"
+			(at 91.44 95.3769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100nF 50V X7R ±10%"
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X7R"
+			(at 90.932 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 91.44 97.9169 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "603"
+			(at 90.932 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C14663"
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 88.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11c695f2-3005-49f3-a158-a43019297a63")
+		)
+		(pin "2"
+			(uuid "85df5e0f-57e0-4c66-9af4-4aed69ca5684")
+		)
+		(instances
+			(project "motion-sensor-hardware"
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4744,7 +5408,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 63.5 0)
+		(at 88.9 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4753,7 +5417,7 @@
 		(fields_autoplaced yes)
 		(uuid "d641b2ec-0b05-4979-8397-aa5254ca1df1")
 		(property "Reference" "#PWR046"
-			(at 92.71 69.85 0)
+			(at 88.9 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4762,7 +5426,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 68.58 0)
+			(at 88.9 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +5435,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 63.5 0)
+			(at 88.9 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4780,7 +5444,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 63.5 0)
+			(at 88.9 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4789,7 +5453,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 63.5 0)
+			(at 88.9 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4876,174 +5540,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 113.03 50.8 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc83c940-7685-4396-a6b3-f1da3bddd430")
-		(property "Reference" "C2"
-			(at 116.84 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 116.84 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 112.0648 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 113.03 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C106837"
-			(at 113.03 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLPCB" ""
-			(at 113.03 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "91f0d5be-8650-4c46-910c-092b45f19dac")
-		)
-		(pin "1"
-			(uuid "85157304-2bcc-4a57-8370-530b0ed7a8f5")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 92.71 97.79 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "e0b5f6b2-dd92-4146-bd31-b215f7a38b8f")
-		(property "Reference" "C14"
-			(at 88.9 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 88.9 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 93.6752 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 92.71 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C106837"
-			(at 92.71 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "01739e3c-6002-45ea-b437-e5cc7e93ca4a")
-		)
-		(pin "1"
-			(uuid "a9e5e171-b573-4b6c-be22-45d8c65b7c29")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
-					(reference "C14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "motion-sensor-syms:ADP6220x")
+		(lib_id "!Power Management:AP62200TWU-7")
 		(at 102.87 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5088,7 +5585,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-40℃~+125℃ 1 135uA 2A 4.2V~18V 750kHz 800mV~7V Adjustable Buck Buck Built-In Yes TSOT-26 DC-DC Converters ROHS"
+		(property "Description" "Buck Switching Regulator IC Positive Adjustable 0.8V 1 Output 2A SOT-23-6 Thin, TSOT-23-6"
 			(at 107.95 104.648 0)
 			(effects
 				(font
@@ -5136,8 +5633,355 @@
 		)
 	)
 	(symbol
+		(lib_id "!Capacitor-0805:10uF_X5R_50V")
+		(at 67.31 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4c7d60c-0d93-4218-90bb-e7563cb57f58")
+		(property "Reference" "C6"
+			(at 69.85 49.6569 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 69.85 52.1969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411041759_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf"
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R ±10%"
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X5R"
+			(at 69.85 54.7369 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 69.85 57.2769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "805"
+			(at 69.85 59.8169 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB" "C440198"
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 67.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8712bdc6-bf15-4a96-9d83-d96d07dc1405")
+		)
+		(pin "1"
+			(uuid "582abed9-333f-46d6-97f3-f0040afec5b2")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "!Capacitor-0603:100nF_X7R_50V")
+		(at 113.03 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e514f6ec-7eed-4368-8035-fe9daa41f83a")
+		(property "Reference" "C3"
+			(at 115.57 48.3869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 115.57 50.9269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+			(at 113.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100nF 50V X7R ±10%"
+			(at 113.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X7R"
+			(at 115.062 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 115.57 53.4669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "603"
+			(at 115.062 56.134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C14663"
+			(at 113.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 113.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ef63e33-b55d-4659-b280-7cc2c7acab36")
+		)
+		(pin "2"
+			(uuid "c64555da-d18c-49c8-ba14-701849309e2f")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "!Capacitor-0805:10uF_X5R_50V")
+		(at 67.31 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed4b6e87-b49f-4c86-815f-462508df8303")
+		(property "Reference" "C10"
+			(at 69.85 86.4869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 69.85 89.0269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411041759_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R ±10%"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tempco" "X5R"
+			(at 69.85 91.5669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 69.85 94.1069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "805"
+			(at 69.85 96.6469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "JLCPCB" "C440198"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8712bdc6-bf15-4a96-9d83-d96d07dc1406")
+		)
+		(pin "1"
+			(uuid "582abed9-333f-46d6-97f3-f0040afec5b3")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9/20280cc7-411e-41b1-8687-9a48928895ed"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 144.78 71.12 0)
+		(at 144.78 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5146,7 +5990,7 @@
 		(fields_autoplaced yes)
 		(uuid "edf6d25f-467c-4a26-8ee5-2b9bfe62e391")
 		(property "Reference" "#PWR014"
-			(at 144.78 77.47 0)
+			(at 144.78 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5155,7 +5999,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 76.2 0)
+			(at 144.78 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5164,7 +6008,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 71.12 0)
+			(at 144.78 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5173,7 +6017,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 71.12 0)
+			(at 144.78 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5182,7 +6026,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 71.12 0)
+			(at 144.78 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,7 +6048,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 156.21 71.12 0)
+		(at 156.21 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5213,7 +6057,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff99686d-86e1-466f-8a96-73a1a8694df1")
 		(property "Reference" "#PWR049"
-			(at 156.21 77.47 0)
+			(at 156.21 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5222,7 +6066,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 76.2 0)
+			(at 156.21 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +6075,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 71.12 0)
+			(at 156.21 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5240,7 +6084,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 71.12 0)
+			(at 156.21 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5249,7 +6093,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 71.12 0)
+			(at 156.21 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
