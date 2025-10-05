@@ -4,6 +4,9 @@
 	(generator_version "9.0")
 	(uuid "f7e49ed0-e002-492f-a8a4-84e8a5e5128d")
 	(paper "A4")
+	(title_block
+		(rev "B")
+	)
 	(lib_symbols
 		(symbol "!Capacitor-0603:100nF_X7R_50V"
 			(pin_numbers
@@ -90,7 +93,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C14663"
+			(property "JLCPCB PN" "C14663"
 				(at 0 0 0)
 				(effects
 					(font
@@ -275,7 +278,7 @@
 					(justify left)
 				)
 			)
-			(property "JLCPCB" "C440198"
+			(property "JLCPCB PN" "C440198"
 				(at 0 0 0)
 				(effects
 					(font
@@ -469,7 +472,7 @@
 					(justify left)
 				)
 			)
-			(property "JLCPCB" "C96123"
+			(property "JLCPCB PN" "C96123"
 				(at 0 0 0)
 				(effects
 					(font
@@ -625,7 +628,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C167221"
+			(property "JLCPCB PN" "C167221"
 				(at 0 0 0)
 				(effects
 					(font
@@ -792,13 +795,22 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C2895288"
+			(property "JLCPCB PN" "C2895288"
 				(at 5.08 -19.304 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
+					(hide yes)
+				)
+			)
+			(property "FT Rotation Offset" "90"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 					(hide yes)
 				)
 			)
@@ -1003,7 +1015,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C22809"
+			(property "JLCPCB PN" "C22809"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1188,7 +1200,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C4184"
+			(property "JLCPCB PN" "C4184"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1373,7 +1385,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C22980"
+			(property "JLCPCB PN" "C22980"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1558,7 +1570,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C23184"
+			(property "JLCPCB PN" "C23184"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2874,7 +2886,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 125.73 118.11 0)
 			(effects
 				(font
@@ -2883,7 +2895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 125.73 118.11 0)
 			(effects
 				(font
@@ -3056,7 +3068,7 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C96123"
+		(property "Tolerance" "±20%"
 			(at 203.2 124.46 0)
 			(effects
 				(font
@@ -3065,7 +3077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±20%"
+		(property "JLCPCB PN" "C96123"
 			(at 203.2 124.46 0)
 			(effects
 				(font
@@ -3173,7 +3185,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 125.73 66.04 0)
 			(effects
 				(font
@@ -3182,7 +3194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 125.73 66.04 0)
 			(effects
 				(font
@@ -3482,15 +3494,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C23184"
-			(at 180.34 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 180.34 121.92 0)
 			(effects
@@ -3501,6 +3504,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 180.34 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C23184"
 			(at 180.34 121.92 0)
 			(effects
 				(font
@@ -3578,7 +3590,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C167221"
+		(property "JLCPCB PN" "C167221"
 			(at 172.72 66.04 0)
 			(effects
 				(font
@@ -3687,7 +3699,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 135.89 69.85 0)
 			(effects
 				(font
@@ -3696,7 +3708,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 135.89 69.85 0)
 			(effects
 				(font
@@ -3929,15 +3941,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C4184"
-			(at 179.07 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 179.07 69.85 0)
 			(effects
@@ -3948,6 +3951,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 179.07 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C4184"
 			(at 179.07 69.85 0)
 			(effects
 				(font
@@ -4046,15 +4058,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C22809"
-			(at 180.34 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 180.34 129.54 0)
 			(effects
@@ -4065,6 +4068,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 180.34 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C22809"
 			(at 180.34 129.54 0)
 			(effects
 				(font
@@ -4207,7 +4219,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C167221"
+		(property "JLCPCB PN" "C167221"
 			(at 172.72 118.11 0)
 			(effects
 				(font
@@ -4381,7 +4393,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 160.02 114.3 0)
 			(effects
 				(font
@@ -4390,7 +4402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 160.02 114.3 0)
 			(effects
 				(font
@@ -4630,7 +4642,7 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C96123"
+		(property "Tolerance" "±20%"
 			(at 203.2 72.39 0)
 			(effects
 				(font
@@ -4639,7 +4651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±20%"
+		(property "JLCPCB PN" "C96123"
 			(at 203.2 72.39 0)
 			(effects
 				(font
@@ -4745,7 +4757,7 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C96123"
+		(property "Tolerance" "±20%"
 			(at 191.77 72.39 0)
 			(effects
 				(font
@@ -4754,7 +4766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±20%"
+		(property "JLCPCB PN" "C96123"
 			(at 191.77 72.39 0)
 			(effects
 				(font
@@ -4860,7 +4872,7 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C96123"
+		(property "Tolerance" "±20%"
 			(at 191.77 124.46 0)
 			(effects
 				(font
@@ -4869,7 +4881,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±20%"
+		(property "JLCPCB PN" "C96123"
 			(at 191.77 124.46 0)
 			(effects
 				(font
@@ -5016,13 +5028,22 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2895288"
+		(property "JLCPCB PN" "C2895288"
 			(at 154.94 85.344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "90"
+			(at 149.86 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5138,7 +5159,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 135.89 121.92 0)
 			(effects
 				(font
@@ -5147,7 +5168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 135.89 121.92 0)
 			(effects
 				(font
@@ -5445,15 +5466,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C22980"
-			(at 179.07 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 179.07 77.47 0)
 			(effects
@@ -5464,6 +5476,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 179.07 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C22980"
 			(at 179.07 77.47 0)
 			(effects
 				(font
@@ -5676,13 +5697,22 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2895288"
+		(property "JLCPCB PN" "C2895288"
 			(at 154.94 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "90"
+			(at 149.86 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -5795,7 +5825,7 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C440198"
+		(property "Tolerance" "±10%"
 			(at 114.3 66.04 0)
 			(effects
 				(font
@@ -5804,7 +5834,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C440198"
+			(at 114.3 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Unnamed: 4" "nan"
 			(at 114.3 66.04 0)
 			(effects
 				(font
@@ -5912,7 +5951,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 160.02 62.23 0)
 			(effects
 				(font
@@ -5921,7 +5960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 160.02 62.23 0)
 			(effects
 				(font
@@ -6027,7 +6066,7 @@
 				(justify left)
 			)
 		)
-		(property "JLCPCB" "C440198"
+		(property "Tolerance" "±10%"
 			(at 114.3 118.11 0)
 			(effects
 				(font
@@ -6036,7 +6075,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C440198"
+			(at 114.3 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Unnamed: 4" "nan"
 			(at 114.3 118.11 0)
 			(effects
 				(font

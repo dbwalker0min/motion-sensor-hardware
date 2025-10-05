@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "d999e802-7382-49ed-b28b-80393e8497d9")
 	(paper "A4")
+	(title_block
+		(title "Motion Sensor/Charge Control")
+		(rev "B")
+	)
 	(lib_symbols
 		(symbol "!Capacitor-0603:100nF_X7R_50V"
 			(pin_numbers
@@ -90,7 +94,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C14663"
+			(property "JLCPCB PN" "C14663"
 				(at 0 0 0)
 				(effects
 					(font
@@ -277,7 +281,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C19702"
+			(property "JLCPCB PN" "C19702"
 				(at 0 0 0)
 				(effects
 					(font
@@ -464,7 +468,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C15849"
+			(property "JLCPCB PN" "C15849"
 				(at 0 0 0)
 				(effects
 					(font
@@ -566,7 +570,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "!Circuit Protection-ESD+TVS:P6SMB24CA-E3/52"
+		(symbol "!Circuit Protection-ESD+TVS:SMBJ16CA"
 			(pin_numbers
 				(hide yes)
 			)
@@ -585,7 +589,7 @@
 					)
 				)
 			)
-			(property "Value" "P6SMB24CA-E3/52"
+			(property "Value" "SMBJ16CA"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -602,7 +606,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586180165067661312"
+			(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8609171504487809024"
 				(at 0 0 0)
 				(effects
 					(font
@@ -620,7 +624,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C88377"
+			(property "JLCPCB PN" "C113990"
 				(at 0 0 0)
 				(effects
 					(font
@@ -647,7 +651,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "P6SMB24CA-E3/52_0_1"
+			(symbol "SMBJ16CA_0_1"
 				(polyline
 					(pts
 						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
@@ -685,7 +689,7 @@
 					)
 				)
 			)
-			(symbol "P6SMB24CA-E3/52_1_1"
+			(symbol "SMBJ16CA_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -779,7 +783,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C19077501"
+			(property "JLCPCB PN" "C19077501"
 				(at 0 0 0)
 				(effects
 					(font
@@ -931,6 +935,24 @@
 				)
 			)
 			(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB PN" "C7519"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FT Rotation Offset" "90"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1385,7 +1407,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C2830246"
+			(property "JLCPCB PN" "C2830246"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1403,7 +1425,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*polyfuse* *PTC*"
+			(property "ki_fp_filters" "Fuse:Fuse_1206_3216Metric"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1540,7 +1562,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C2937625"
+			(property "JLCPCB PN" "C2937625"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1720,7 +1742,16 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C5188442"
+			(property "JLCPCB PN" "C5188442"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FT Rotation Offset" "180"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1738,7 +1769,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
+			(property "ki_fp_filters" "!Connectors:*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1919,7 +1950,16 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C5188444"
+			(property "JLCPCB PN" "C5188444"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FT Rotation Offset" "180"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1937,7 +1977,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
+			(property "ki_fp_filters" "!Connectors:*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2223,7 +2263,16 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C2765186"
+			(property "JLCPCB PN" "C2765186"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FT Position Offset" "0, 1.015"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2933,7 +2982,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C19077446"
+			(property "JLCPCB PN" "C19077446"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3087,7 +3136,16 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C75925"
+			(property "JLCPCB PN" "C75925"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FT Rotation Offset" "180"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3283,7 +3341,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TSOT-23"
+			(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
 				(at 5.08 2.54 0)
 				(effects
 					(font
@@ -3310,7 +3368,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C15127"
+			(property "JLCPCB PN" "C15127"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3607,7 +3665,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C22371521"
+			(property "JLCPCB PN" "C22371521"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3869,7 +3927,16 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C6747780"
+			(property "JLCPCB PN" "C6747780"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "FT Rotation Offset" "90"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4410,7 +4477,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C2838502"
+			(property "JLCPCB PN" "C2838502"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5511,7 +5578,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C21189"
+			(property "JLCPCB PN" "C21189"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5696,7 +5763,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C22775"
+			(property "JLCPCB PN" "C22775"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5881,7 +5948,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C25804"
+			(property "JLCPCB PN" "C25804"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6066,7 +6133,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C23138"
+			(property "JLCPCB PN" "C23138"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6251,7 +6318,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C23186"
+			(property "JLCPCB PN" "C23186"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6408,7 +6475,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C19723500"
+			(property "JLCPCB PN" "C19723500"
 				(at -11.43 6.35 0)
 				(effects
 					(font
@@ -6579,7 +6646,7 @@
 					(hide yes)
 				)
 			)
-			(property "JLCPCB" "C720477"
+			(property "JLCPCB PN" "C720477"
 				(at 0 0 0)
 				(effects
 					(font
@@ -9177,15 +9244,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C23186"
-			(at 55.88 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 55.88 81.28 0)
 			(effects
@@ -9196,6 +9254,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 55.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C23186"
 			(at 55.88 81.28 0)
 			(effects
 				(font
@@ -9271,7 +9338,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C75925"
+		(property "JLCPCB PN" "C75925"
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 180.34 148.59 0)
 			(effects
 				(font
@@ -9645,15 +9721,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C23186"
-			(at 55.88 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 55.88 83.82 0)
 			(effects
@@ -9664,6 +9731,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 55.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C23186"
 			(at 55.88 83.82 0)
 			(effects
 				(font
@@ -9761,15 +9837,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C25804"
-			(at 227.33 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 227.33 88.9 0)
 			(effects
@@ -9780,6 +9847,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 227.33 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C25804"
 			(at 227.33 88.9 0)
 			(effects
 				(font
@@ -10021,7 +10097,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 181.61 60.96 0)
 			(effects
 				(font
@@ -10030,7 +10106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 181.61 60.96 0)
 			(effects
 				(font
@@ -10458,15 +10534,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C25804"
-			(at 229.87 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 229.87 88.9 0)
 			(effects
@@ -10477,6 +10544,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 229.87 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C25804"
 			(at 229.87 88.9 0)
 			(effects
 				(font
@@ -10575,15 +10651,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C22775"
-			(at 64.77 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 64.77 149.86 0)
 			(effects
@@ -10594,6 +10661,15 @@
 			)
 		)
 		(property "Tempco" "±200ppm/℃"
+			(at 64.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C22775"
 			(at 64.77 149.86 0)
 			(effects
 				(font
@@ -10672,7 +10748,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C19077446"
+		(property "JLCPCB PN" "C19077446"
 			(at 76.2 147.32 0)
 			(effects
 				(font
@@ -10837,15 +10913,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C21189"
-			(at 83.82 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "nan"
 			(at 83.82 93.98 0)
 			(effects
@@ -10856,6 +10923,15 @@
 			)
 		)
 		(property "Tempco" "nan"
+			(at 83.82 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C21189"
 			(at 83.82 93.98 0)
 			(effects
 				(font
@@ -10960,7 +11036,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C19702"
+		(property "Tolerance" "±10%"
 			(at 205.74 130.81 0)
 			(effects
 				(font
@@ -10969,7 +11045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C19702"
 			(at 205.74 130.81 0)
 			(effects
 				(font
@@ -11180,7 +11256,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2937625"
+		(property "JLCPCB PN" "C2937625"
 			(at 224.79 64.77 0)
 			(effects
 				(font
@@ -11263,7 +11339,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C22371521"
+		(property "JLCPCB PN" "C22371521"
 			(at 199.39 148.59 0)
 			(effects
 				(font
@@ -11345,7 +11421,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2838502"
+		(property "JLCPCB PN" "C2838502"
 			(at 173.99 96.52 0)
 			(effects
 				(font
@@ -11575,7 +11651,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C15127"
+		(property "JLCPCB PN" "C15127"
 			(at 64.77 140.97 0)
 			(effects
 				(font
@@ -11656,7 +11732,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C19077501"
+		(property "JLCPCB PN" "C19077501"
 			(at 242.57 148.59 0)
 			(effects
 				(font
@@ -11869,7 +11945,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C19077501"
+		(property "JLCPCB PN" "C19077501"
 			(at 146.05 163.83 0)
 			(effects
 				(font
@@ -12014,7 +12090,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C720477"
+		(property "JLCPCB PN" "C720477"
 			(at 114.3 80.01 0)
 			(effects
 				(font
@@ -12033,6 +12109,85 @@
 			(project "motion-sensor-hardware"
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "!Circuit Protection-ESD+TVS:SMBJ16CA")
+		(at 52.07 147.32 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8645f211-a4fd-49c9-a44c-7ccc2afa9d82")
+		(property "Reference" "D1"
+			(at 54.61 146.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMBJ16CA"
+			(at 54.61 148.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8609171504487809024"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "TVS 1A 20.5 VSO, 22.8-25.2 VBD"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C113990"
+			(at 52.07 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5fd7e04-7075-49ff-a33a-f127d2dc5fb5")
+		)
+		(pin "2"
+			(uuid "61ba3af5-d8d0-42d4-968a-f1cf9f1321d8")
+		)
+		(instances
+			(project ""
+				(path "/d999e802-7382-49ed-b28b-80393e8497d9"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -12121,7 +12276,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 205.74 137.16 0)
 			(effects
 				(font
@@ -12130,7 +12285,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 205.74 137.16 0)
 			(effects
 				(font
@@ -12362,15 +12517,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C21189"
-			(at 83.82 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "nan"
 			(at 83.82 91.44 0)
 			(effects
@@ -12389,6 +12535,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB PN" "C21189"
+			(at 83.82 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8d009613-2330-47f5-8a8d-81288d7890ed")
 		)
@@ -12399,83 +12554,6 @@
 			(project ""
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "!Circuit Protection-ESD+TVS:P6SMB24CA-E3/52")
-		(at 52.07 147.32 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9094bf4c-1b42-49d8-a77e-3ec4bd655708")
-		(property "Reference" "D1"
-			(at 49.53 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "P6SMB24CA-E3/52"
-			(at 55.88 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 52.07 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586180165067661312"
-			(at 52.07 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "TVS 1A 20.5 VSO, 22.8-25.2 VBD"
-			(at 52.07 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB" "C88377"
-			(at 52.07 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e6a83005-8dd5-44f3-829a-701fa763be22")
-		)
-		(pin "2"
-			(uuid "b5446eb4-09a9-4747-9123-1f56216b32aa")
-		)
-		(instances
-			(project "motion-sensor-hardware"
-				(path "/d999e802-7382-49ed-b28b-80393e8497d9"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -12697,7 +12775,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C19702"
+		(property "Tolerance" "±10%"
 			(at 193.04 60.96 0)
 			(effects
 				(font
@@ -12706,7 +12784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C19702"
 			(at 193.04 60.96 0)
 			(effects
 				(font
@@ -12934,15 +13012,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C25804"
-			(at 135.89 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 135.89 68.58 0)
 			(effects
@@ -12953,6 +13022,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 135.89 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C25804"
 			(at 135.89 68.58 0)
 			(effects
 				(font
@@ -13094,7 +13172,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C5188442"
+		(property "JLCPCB PN" "C5188442"
+			(at 24.13 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 24.13 138.43 0)
 			(effects
 				(font
@@ -13306,7 +13393,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2830246"
+		(property "JLCPCB PN" "C2830246"
 			(at 43.18 138.43 0)
 			(effects
 				(font
@@ -13452,7 +13539,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C6747780"
+		(property "JLCPCB PN" "C6747780"
+			(at 132.08 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 132.08 162.56 0)
 			(effects
 				(font
@@ -13668,7 +13764,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C720477"
+		(property "JLCPCB PN" "C720477"
 			(at 222.25 123.19 0)
 			(effects
 				(font
@@ -13730,7 +13826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579714554416455680"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
 			(at 69.85 99.695 0)
 			(effects
 				(font
@@ -13740,7 +13836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "17V Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-6  (USB)"
+		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
 			(at 68.58 91.44 0)
 			(effects
 				(font
@@ -13749,7 +13845,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C7519"
+		(property "JLCPCB PN" "C7519"
+			(at 68.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "90"
 			(at 68.58 91.44 0)
 			(effects
 				(font
@@ -13936,7 +14041,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C15849"
+		(property "Tolerance" "±10%"
 			(at 135.89 78.74 0)
 			(effects
 				(font
@@ -13945,7 +14050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C15849"
 			(at 135.89 78.74 0)
 			(effects
 				(font
@@ -14022,7 +14127,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C19723500"
+		(property "JLCPCB PN" "C19723500"
 			(at 129.54 179.07 0)
 			(effects
 				(font
@@ -14194,15 +14299,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C23138"
-			(at 115.57 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 115.57 160.02 0)
 			(effects
@@ -14213,6 +14309,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 115.57 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C23138"
 			(at 115.57 160.02 0)
 			(effects
 				(font
@@ -14320,7 +14425,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C14663"
+		(property "Tolerance" "±10%"
 			(at 175.26 137.16 0)
 			(effects
 				(font
@@ -14329,7 +14434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "±10%"
+		(property "JLCPCB PN" "C14663"
 			(at 175.26 137.16 0)
 			(effects
 				(font
@@ -14471,7 +14576,16 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C5188444"
+		(property "JLCPCB PN" "C5188444"
+			(at 256.54 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 256.54 140.97 0)
 			(effects
 				(font
@@ -14575,15 +14689,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C25804"
-			(at 64.77 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 64.77 158.75 0)
 			(effects
@@ -14594,6 +14699,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 64.77 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C25804"
 			(at 64.77 158.75 0)
 			(effects
 				(font
@@ -14935,7 +15049,34 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2765186"
+		(property "JLCPCB PN" "C2765186"
+			(at 35.56 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 35.56 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Origin" "Center"
+			(at 35.56 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 35.56 91.44 0)
 			(effects
 				(font
@@ -15078,15 +15219,6 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C25804"
-			(at 232.41 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Power" "100mW"
 			(at 232.41 88.9 0)
 			(effects
@@ -15097,6 +15229,15 @@
 			)
 		)
 		(property "Tempco" "±100ppm/℃"
+			(at 232.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB PN" "C25804"
 			(at 232.41 88.9 0)
 			(effects
 				(font
