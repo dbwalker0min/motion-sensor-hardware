@@ -582,7 +582,7 @@
       "plot": "Production/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "motion-sensor-hardware.step",
       "svg": "",
       "vrml": ""
     },

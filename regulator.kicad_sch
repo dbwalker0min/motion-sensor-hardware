@@ -601,7 +601,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Inductor_SMD:L_Changjiang_FXL0630"
+			(property "Footprint" "!Inductors:L_Changjiang_FXL0630"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3563,7 +3563,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Changjiang_FXL0630"
+		(property "Footprint" "!Inductors:L_Changjiang_FXL0630"
 			(at 172.72 66.04 0)
 			(effects
 				(font
@@ -4192,7 +4192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Changjiang_FXL0630"
+		(property "Footprint" "!Inductors:L_Changjiang_FXL0630"
 			(at 172.72 118.11 0)
 			(effects
 				(font
