@@ -6619,7 +6619,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
+			(property "Footprint" "!Switches:SW_TS-1088-xx020xx_XUNPU"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -7598,6 +7598,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 138.43) (xy 39.37 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f24acad-3989-4ce6-94f2-06beea4c57cd")
+	)
+	(wire
+		(pts
 			(xy 201.93 104.14) (xy 213.36 104.14)
 		)
 		(stroke
@@ -7785,16 +7795,6 @@
 			(type default)
 		)
 		(uuid "39e0bdf3-a508-4c00-b201-5a29b9f22b3d")
-	)
-	(wire
-		(pts
-			(xy 29.21 140.97) (xy 29.21 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a1a919c-b2dd-4841-bd0c-8cb8d21fdd91")
 	)
 	(wire
 		(pts
@@ -8358,6 +8358,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 140.97) (xy 26.67 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e5ab29-00d2-474f-8a5a-2d7206f30b52")
+	)
+	(wire
+		(pts
 			(xy 142.24 180.34) (xy 142.24 179.07)
 		)
 		(stroke
@@ -8365,16 +8375,6 @@
 			(type default)
 		)
 		(uuid "babc5233-2337-4ab7-980c-19255ac3487c")
-	)
-	(wire
-		(pts
-			(xy 29.21 138.43) (xy 39.37 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb4c0ba4-6e48-4b19-bca5-66164116caef")
 	)
 	(wire
 		(pts
@@ -8585,6 +8585,16 @@
 			(type default)
 		)
 		(uuid "df7780da-7047-4025-ab73-8b63ba42036a")
+	)
+	(wire
+		(pts
+			(xy 26.67 140.97) (xy 26.67 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e011974e-939f-447a-92b5-20ee4c676dd3")
 	)
 	(wire
 		(pts
@@ -12063,7 +12073,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
+		(property "Footprint" "!Switches:SW_TS-1088-xx020xx_XUNPU"
 			(at 109.22 80.01 0)
 			(effects
 				(font
@@ -13121,8 +13131,7 @@
 	)
 	(symbol
 		(lib_id "!Connectors-Screw:MX128-2.54-02P")
-		(at 24.13 138.43 0)
-		(mirror y)
+		(at 20.32 140.97 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13130,7 +13139,7 @@
 		(dnp no)
 		(uuid "a526e164-841b-492a-811c-b7595bf69664")
 		(property "Reference" "J1"
-			(at 24.13 135.89 0)
+			(at 20.32 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13138,7 +13147,7 @@
 			)
 		)
 		(property "Value" "MX128-2.54-02P"
-			(at 24.765 146.05 0)
+			(at 22.225 147.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13146,7 +13155,7 @@
 			)
 		)
 		(property "Footprint" "!Connectors:MX128-2.54-02P"
-			(at 24.13 138.43 0)
+			(at 20.32 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13155,7 +13164,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8604752379715997696"
-			(at 24.13 138.43 0)
+			(at 20.32 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13164,7 +13173,7 @@
 			)
 		)
 		(property "Description" "Screw Term Block, 2 Pos, 2.54 mm"
-			(at 24.13 138.43 0)
+			(at 20.32 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13173,7 +13182,7 @@
 			)
 		)
 		(property "JLCPCB PN" "C5188442"
-			(at 24.13 138.43 0)
+			(at 20.32 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13182,7 +13191,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 24.13 138.43 0)
+			(at 20.32 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13197,7 +13206,7 @@
 			(uuid "d6bae27a-3f1b-487c-9261-3863f440bf60")
 		)
 		(instances
-			(project ""
+			(project "motion-sensor-hardware"
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9"
 					(reference "J1")
 					(unit 1)
@@ -13737,7 +13746,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
+		(property "Footprint" "!Switches:SW_TS-1088-xx020xx_XUNPU"
 			(at 217.17 123.19 0)
 			(effects
 				(font
@@ -14526,7 +14535,8 @@
 	)
 	(symbol
 		(lib_id "!Connectors-Screw:MX128-2.54-04P")
-		(at 256.54 140.97 0)
+		(at 256.54 143.51 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14542,7 +14552,7 @@
 			)
 		)
 		(property "Value" "MX128-2.54-04P"
-			(at 262.89 149.225 0)
+			(at 263.525 149.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14550,7 +14560,7 @@
 			)
 		)
 		(property "Footprint" "!Connectors:MX128-2.54-04P"
-			(at 256.54 140.97 0)
+			(at 256.54 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14559,7 +14569,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8604752386087010304"
-			(at 256.54 140.97 0)
+			(at 256.54 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14568,7 +14578,7 @@
 			)
 		)
 		(property "Description" "Screw Term Block, 4 Pos, 2.54mm"
-			(at 256.54 140.97 0)
+			(at 256.54 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14577,7 +14587,7 @@
 			)
 		)
 		(property "JLCPCB PN" "C5188444"
-			(at 256.54 140.97 0)
+			(at 256.54 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14586,7 +14596,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 256.54 140.97 0)
+			(at 256.54 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14607,7 +14617,7 @@
 			(uuid "3b7a153e-8a85-4295-8651-6b0dc1bb9710")
 		)
 		(instances
-			(project ""
+			(project "motion-sensor-hardware"
 				(path "/d999e802-7382-49ed-b28b-80393e8497d9"
 					(reference "J4")
 					(unit 1)
@@ -14733,7 +14743,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 142.24 0)
+		(at 26.67 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14741,7 +14751,7 @@
 		(dnp no)
 		(uuid "e9a11f8b-ce6a-4159-b3ef-0ba1656b9330")
 		(property "Reference" "#PWR02"
-			(at 29.21 148.59 0)
+			(at 26.67 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14750,7 +14760,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.21 146.05 0)
+			(at 26.67 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14759,7 +14769,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 142.24 0)
+			(at 26.67 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14768,7 +14778,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 142.24 0)
+			(at 26.67 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14777,7 +14787,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 142.24 0)
+			(at 26.67 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
