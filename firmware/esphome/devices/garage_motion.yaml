@@ -1,0 +1,14 @@
+
+esphome:
+  name: motion-sensor
+  name_add_mac_suffix: True
+  friendly_name: "Garage Motion Sensor"
+  comment: "Garage Motion Sensor"
+  min_version: 2024.6.0
+
+packages:
+  base: !include ..\packages\base_c3mini.yaml
+  charge_control: !include ..\packages\charger_control.yaml
+  radar: !include ..\packages\radar.yaml
+  wifi: !include ..\packages\wifi.yaml
+  pixel: !include ..\packages\ws2812_single.yaml

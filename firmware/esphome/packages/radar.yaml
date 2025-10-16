@@ -1,10 +1,12 @@
 # This package supports the LD2410C radar sensor
 
-# The UART is needed to interface with the device
+# The UART is needed to interface with the device.
+# Note that the RX/TX pins are named from the perspective of the LD2410C,
+# so the TX pin on the radar connects to the RX pin on the ESP32, and vice versa.
 uart:
   id: uart_radar
-  tx_pin: ${radar_tx_pin}
-  rx_pin: ${radar_rx_pin}
+  tx_pin: ${radar_rx_pin} 
+  rx_pin: ${radar_tx_pin}
   baud_rate: 256000 
   stop_bits: 1
   parity: NONE
@@ -21,17 +23,29 @@ binary_sensor:
       number: ${radar_out_pin}
       mode: INPUT
       inverted: false
-    name: "${upper_name} Radar Output"
+    name: Radar Output
     device_class: motion
     filters:
       - delayed_on: 100ms
-      - delayed_off: 10s
+      - delayed_off: 1s
     
   - platform: ld2410
     has_target:
-        name: "${upper_name} Presence"
+        id: bs_presence
+        name: Presence
+
     has_moving_target:
-        name: "${upper_name} Motion"
+        id: bs_motion
+        name: Motion
+        on_state:
+            then:
+                - script.execute: update_led   
+                 
     has_still_target:
-        name: "${upper_name} Still Target"
-        
+        id: bs_still
+        name: Still Target
+        on_state:
+            then:
+                - script.execute: update_led
+
+    

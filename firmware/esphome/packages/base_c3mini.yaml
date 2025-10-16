@@ -8,11 +8,6 @@ substitutions:
   charger_status_pin: GPIO3
   charger_enable_pin: GPIO4
   
-esphome:
-  name: ${name}
-  comment: "${upper_name}"
-  min_version: 2024.6.0
-
 esp32:
   board: esp32-c3-devkitm-1
   variant: esp32c3

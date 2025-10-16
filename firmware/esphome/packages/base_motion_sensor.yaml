@@ -1,4 +1,25 @@
 
+globals:
+  - id: led_brightness
+    type: float
+    restore_value: yes
+    initial_value: '0.5'   # 50% brightness default
+
+number:
+  - platform: template
+    id: led_intensity
+    name: LED Intensity
+    min_value: 0.0
+    max_value: 1.0
+    step: 0.1
+    icon: "mdi:led-on"
+    initial_value: '0.5'
+    optimistic: true
+    set_action:
+      - lambda: |-
+            id(led_brightness) = x;
+            // Update the LED immediately when the intensity changes
+            id(update_led).execute();
 
 packages:
   base: !include base_c3mini.yaml

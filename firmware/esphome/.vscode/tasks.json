@@ -4,7 +4,7 @@
     {
       "label": "ESPHome: Compile",
       "type": "shell",
-      "command": "uvx esphome compile devices/${input:dev}.yaml",
+      "command": "uvx esphome compile devices/garage_motion.yaml",
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -14,29 +14,21 @@
     {
       "label": "ESPHome: Upload (OTA)",
       "type": "shell",
-      "command": "uvx esphome upload devices/${input:dev}.yaml",
+      "problemMatcher": [],
+      "command": "uvx esphome upload devices/garage_motion.yaml",
       "dependsOn": "ESPHome: Compile"
     },
     {
       "label": "ESPHome: Logs",
       "type": "shell",
-      "command": "uvx esphome logs devices/${input:dev}.yaml"
+      "problemMatcher": [],
+      "command": "uvx esphome logs devices/garage_motion.yaml"
     },
     {
       "label": "ESPHome: Upload (USB)",
       "type": "shell",
-      "command": "uvx esphome upload devices/${input:dev}.yaml --device COM5"
-    }
-  ],
-  "inputs": [
-    {
-      "id": "dev",
-      "type": "pickString",
-      "description": "Choose device YAML",
-      "options": [
-        "garage1"
-      ],
-      "default": "garage1"
-    }
+      "problemMatcher": [],
+      "command": "uvx esphome upload devices/garage_motion.yaml --device COM5"
+    } 
   ]
 }

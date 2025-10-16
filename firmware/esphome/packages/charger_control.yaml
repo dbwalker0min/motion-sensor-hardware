@@ -3,7 +3,7 @@
 switch:
   - platform: gpio
     id: charger_enable
-    name: "${upper_name} Charger Enable"
+    name: Charger Enable
     pin:
       number: ${charger_enable_pin}
       inverted: true
@@ -18,9 +18,8 @@ binary_sensor:
         input: true
         pullup: true
       inverted: false
-    name: "${upper_name} Charger Status"
+    name: Charger Status
     device_class: plug
     filters:
       - delayed_on: 1s
       - delayed_off: 1s
-      
