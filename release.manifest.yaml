@@ -1,0 +1,21 @@
+product: my-device
+release: 2025.10.15        # or product semver: 2.1.0
+notes: "Initial version of my-device with basic features."
+components:
+  hardware:
+    revision: "B"   # PCB revision
+    git_sha: 4f7d1c...
+    artifacts:
+      - hardware/Production/Motion_SensorCharger_Control_B.zip
+  enclosure:
+    version: 1.0.0
+    git_sha: 9b2a88...
+    artifacts:
+      - enclosure/stl/lid.stl
+      - enclosure/stl/base.stl
+  firmware:
+    version: 1.8.1
+    git_sha: 2ac3de...
+    artifacts:
+      - firmware/esphome/.esphome/build/my_device/my_device.bin
+  pinout_profile: "rev-B"     # ties firmware config to the PCB rev
