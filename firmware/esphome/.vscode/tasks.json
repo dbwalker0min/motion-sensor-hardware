@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ESPHome: Compile",
+      "type": "shell",
+      "command": "uvx esphome compile devices/${input:dev}.yaml",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "ESPHome: Upload (OTA)",
+      "type": "shell",
+      "command": "uvx esphome upload devices/${input:dev}.yaml",
+      "dependsOn": "ESPHome: Compile"
+    },
+    {
+      "label": "ESPHome: Logs",
+      "type": "shell",
+      "command": "uvx esphome logs devices/${input:dev}.yaml"
+    },
+    {
+      "label": "ESPHome: Upload (USB)",
+      "type": "shell",
+      "command": "uvx esphome upload devices/${input:dev}.yaml --device COM5"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "dev",
+      "type": "pickString",
+      "description": "Choose device YAML",
+      "options": [
+        "garage1"
+      ],
+      "default": "garage1"
+    }
+  ]
+}

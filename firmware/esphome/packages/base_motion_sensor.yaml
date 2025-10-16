@@ -1,0 +1,8 @@
+
+
+packages:
+  base: !include base_c3mini.yaml
+  charge_control: !include charger_control.yaml
+  radar: !include radar.yaml
+  wifi: !include wifi.yaml
+  pixel: !include ws2812_single.yaml

@@ -1,0 +1,36 @@
+# Defaults (can be overridden by each device file)
+substitutions:
+  # These are the defined GPIO pins for Rev B
+  pixel_pin: GPIO10
+  radar_tx_pin: GPIO7
+  radar_rx_pin: GPIO6
+  radar_out_pin: GPIO5
+  charger_status_pin: GPIO3
+  charger_enable_pin: GPIO4
+  
+esphome:
+  name: ${name}
+  comment: "${upper_name}"
+  min_version: 2024.6.0
+
+esp32:
+  board: esp32-c3-devkitm-1
+  variant: esp32c3
+  framework:
+    type: esp-idf
+
+# Use defaults for these components
+logger:
+api:
+  encryption: { key: !secret api_key }
+
+ota:
+
+web_server:
+  port: 80
+  version: 3
+
+mdns:
+  disabled: false
+
+captive_portal:

@@ -1,0 +1,8 @@
+light:
+  - platform: esp32_rmt_led_strip
+    id: status_pixel
+    name: "${upper_name} Pixel"
+    pin: ${pixel_pin}
+    num_leds: 1
+    chipset: ws2812
+    rgb_order: GRB

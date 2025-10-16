@@ -1,0 +1,37 @@
+# This package supports the LD2410C radar sensor
+
+# The UART is needed to interface with the device
+uart:
+  id: uart_radar
+  tx_pin: ${radar_tx_pin}
+  rx_pin: ${radar_rx_pin}
+  baud_rate: 256000 
+  stop_bits: 1
+  parity: NONE
+
+ld2410:
+    id: radar_sensor
+    uart_id: uart_radar
+
+# Output pin to indicate motion or presence detected
+binary_sensor:
+  - platform: gpio
+    id: radar_out
+    pin:
+      number: ${radar_out_pin}
+      mode: INPUT
+      inverted: false
+    name: "${upper_name} Radar Output"
+    device_class: motion
+    filters:
+      - delayed_on: 100ms
+      - delayed_off: 10s
+    
+  - platform: ld2410
+    has_target:
+        name: "${upper_name} Presence"
+    has_moving_target:
+        name: "${upper_name} Motion"
+    has_still_target:
+        name: "${upper_name} Still Target"
+        
