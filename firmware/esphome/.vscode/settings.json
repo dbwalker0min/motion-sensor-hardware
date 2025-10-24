@@ -1,5 +1,7 @@
 {
   "files.autoSave": "afterDelay",
+  "esphome.configFile": "devices/garage_motion.yaml",
+
   "files.associations": {
     "devices/*.yaml": "esphome",
     "packages/*.yaml": "esphome"

@@ -2,8 +2,7 @@
 esphome:
   name: motion-sensor
   name_add_mac_suffix: True
-  friendly_name: "Garage Motion Sensor"
-  comment: "Garage Motion Sensor"
+  friendly_name: "Motion Sensor Plus"
   min_version: 2024.6.0
 
 packages:
