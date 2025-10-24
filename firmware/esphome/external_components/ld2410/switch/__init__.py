@@ -13,6 +13,7 @@ from .. import CONF_LD2410_ID, LD2410Component, ld2410_ns
 
 BluetoothSwitch = ld2410_ns.class_("BluetoothSwitch", switch.Switch)
 EngineeringModeSwitch = ld2410_ns.class_("EngineeringModeSwitch", switch.Switch)
+AutocalibrateSwitch = ld2410_ns.class_("AutocalibrateSwitch", switch.Switch)
 
 CONF_ENGINEERING_MODE = "engineering_mode"
 

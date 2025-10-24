@@ -55,12 +55,14 @@ class LD2410Component : public Component, public uart::UARTDevice {
 #ifdef USE_TEXT_SENSOR
   SUB_TEXT_SENSOR(version)
   SUB_TEXT_SENSOR(mac)
+  SUB_TEXT_SENSOR(auto_calibration_status)
 #endif
 #ifdef USE_NUMBER
   SUB_NUMBER(light_threshold)
   SUB_NUMBER(max_move_distance_gate)
   SUB_NUMBER(max_still_distance_gate)
   SUB_NUMBER(timeout)
+  SUB_NUMBER(autocalibrate_seconds)
 #endif
 #ifdef USE_SELECT
   SUB_SELECT(baud_rate)
@@ -76,6 +78,7 @@ class LD2410Component : public Component, public uart::UARTDevice {
   SUB_BUTTON(factory_reset)
   SUB_BUTTON(query)
   SUB_BUTTON(restart)
+  SUB_BUTTON(autocalibrate)
 #endif
 
  public:
@@ -101,9 +104,13 @@ class LD2410Component : public Component, public uart::UARTDevice {
   void set_distance_resolution(const std::string &state);
   void set_baud_rate(const std::string &state);
   void factory_reset();
-
+  void autocalibrate(); // uses autocal_seconds
+  void autocalibrate(uint16_t autocal_seconds);
+  void set_autocal_seconds(uint16_t s) { autocal_seconds_ = s; }
+  uint16_t get_autocal_seconds() const { return autocal_seconds_; }
  protected:
   void send_command_(uint8_t command_str, const uint8_t *command_value, uint8_t command_value_len);
+  uint16_t autocal_seconds_{30};  // default autocalibration time in seconds
   void set_config_mode_(bool enable);
   void handle_periodic_data_();
   bool handle_ack_data_();

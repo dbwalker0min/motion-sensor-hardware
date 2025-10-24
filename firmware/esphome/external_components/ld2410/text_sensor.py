@@ -13,6 +13,9 @@ from . import CONF_LD2410_ID, LD2410Component
 
 DEPENDENCIES = ["ld2410"]
 
+CONF_AUTO_CALIBRATION_STATUS = "auto_calibration_status"
+ICON_INFO = "mdi:information-outline"
+
 CONFIG_SCHEMA = {
     cv.GenerateID(CONF_LD2410_ID): cv.use_id(LD2410Component),
     cv.Optional(CONF_VERSION): text_sensor.text_sensor_schema(
@@ -20,6 +23,9 @@ CONFIG_SCHEMA = {
     ),
     cv.Optional(CONF_MAC_ADDRESS): text_sensor.text_sensor_schema(
         entity_category=ENTITY_CATEGORY_DIAGNOSTIC, icon=ICON_BLUETOOTH
+    ),
+    cv.Optional(CONF_AUTO_CALIBRATION_STATUS): text_sensor.text_sensor_schema(
+        entity_category=ENTITY_CATEGORY_DIAGNOSTIC, icon=ICON_INFO
     ),
 }
 
@@ -32,3 +38,6 @@ async def to_code(config):
     if mac_address_config := config.get(CONF_MAC_ADDRESS):
         sens = await text_sensor.new_text_sensor(mac_address_config)
         cg.add(ld2410_component.set_mac_text_sensor(sens))
+    if auto_calibration_status_config := config.get(CONF_AUTO_CALIBRATION_STATUS):
+        sens = await text_sensor.new_text_sensor(auto_calibration_status_config)
+        cg.add(ld2410_component.set_auto_calibration_status_text_sensor(sens))

@@ -1,5 +1,9 @@
 # This package supports the LD2410C radar sensor
 
+external_components:
+  - source: ../external_components
+    components: [ld2410]
+
 # The UART is needed to interface with the device.
 # Note that the RX/TX pins are named from the perspective of the LD2410C,
 # so the TX pin on the radar connects to the RX pin on the ESP32, and vice versa.
@@ -37,15 +41,29 @@ binary_sensor:
     has_moving_target:
         id: bs_motion
         name: Motion
-        on_state:
-            then:
-                - script.execute: update_led   
+        # on_state:
+        #     then:
+        #         - script.execute: update_led   
                  
     has_still_target:
         id: bs_still
         name: Still Target
-        on_state:
-            then:
-                - script.execute: update_led
+        # on_state:
+        #     then:
+        #         - script.execute: update_led
 
-    
+text_sensor:
+  - platform: ld2410
+    version:
+      name: Firmware Version
+    auto_calibration_status:
+      name: Auto Calibration Status
+button:
+  - platform: ld2410
+    autocalibrate:
+      name: Autocalibrate Radar Sensor
+
+number:
+  - platform: ld2410
+    autocalibrate_seconds:
+      name: Autocalibrate Seconds

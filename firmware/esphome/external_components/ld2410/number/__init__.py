@@ -22,10 +22,13 @@ from .. import CONF_LD2410_ID, LD2410Component, ld2410_ns
 GateThresholdNumber = ld2410_ns.class_("GateThresholdNumber", number.Number)
 LightThresholdNumber = ld2410_ns.class_("LightThresholdNumber", number.Number)
 MaxDistanceTimeoutNumber = ld2410_ns.class_("MaxDistanceTimeoutNumber", number.Number)
+AutocalibrateSeconds = ld2410_ns.class_("AutocalibrateSeconds", number.Number)
+ICON_CAMERA_TIMER = "mdi:camera-timer"
 
 CONF_MAX_MOVE_DISTANCE_GATE = "max_move_distance_gate"
 CONF_MAX_STILL_DISTANCE_GATE = "max_still_distance_gate"
 CONF_LIGHT_THRESHOLD = "light_threshold"
+CONF_AUTOCALIBRATE_SECONDS = "autocalibrate_seconds"
 
 TIMEOUT_GROUP = "timeout"
 
@@ -55,6 +58,12 @@ CONFIG_SCHEMA = cv.Schema(
             device_class=DEVICE_CLASS_ILLUMINANCE,
             entity_category=ENTITY_CATEGORY_CONFIG,
             icon=ICON_LIGHTBULB,
+        ),
+        cv.Optional(CONF_AUTOCALIBRATE_SECONDS): number.number_schema(
+            AutocalibrateSeconds,
+            device_class=DEVICE_CLASS_ILLUMINANCE,
+            entity_category=ENTITY_CATEGORY_CONFIG,
+            icon=ICON_CAMERA_TIMER,
         ),
     }
 )
@@ -110,6 +119,12 @@ async def to_code(config):
         )
         await cg.register_parented(n, config[CONF_LD2410_ID])
         cg.add(ld2410_component.set_light_threshold_number(n))
+    if autocalibrate_seconds_config := config.get(CONF_AUTOCALIBRATE_SECONDS):
+        n = await number.new_number(
+            autocalibrate_seconds_config, min_value=10, max_value=600, step=1
+        )
+        await cg.register_parented(n, config[CONF_LD2410_ID])
+        cg.add(ld2410_component.set_autocalibrate_seconds_number(n))
     for x in range(9):
         if gate_conf := config.get(f"g{x}"):
             move_config = gate_conf[CONF_MOVE_THRESHOLD]

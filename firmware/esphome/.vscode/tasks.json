@@ -4,7 +4,7 @@
     {
       "label": "ESPHome: Compile",
       "type": "shell",
-      "command": "uvx esphome compile devices/garage_motion.yaml",
+      "command": "uvx esphome compile devices/motion_plus.yaml",
       "problemMatcher": [],
       "group": {
         "kind": "build",
@@ -15,20 +15,27 @@
       "label": "ESPHome: Upload (OTA)",
       "type": "shell",
       "problemMatcher": [],
-      "command": "uvx esphome upload devices/garage_motion.yaml",
-      "dependsOn": "ESPHome: Compile"
+      "command": "uvx esphome upload devices/motion_plus.yaml",
     },
     {
       "label": "ESPHome: Logs",
       "type": "shell",
       "problemMatcher": [],
-      "command": "uvx esphome logs devices/garage_motion.yaml"
+      "command": "uvx esphome logs devices/motion_plus.yaml"
     },
     {
       "label": "ESPHome: Upload (USB)",
       "type": "shell",
       "problemMatcher": [],
-      "command": "uvx esphome upload devices/garage_motion.yaml --device COM5"
-    } 
-  ]
-}
+      "command": "uvx esphome upload devices/motion_plus.yaml --device ${input:serial_port}",
+    }
+  ],
+  "inputs": [
+    {
+      "id": "serial_port",
+      "type": "promptString",
+      "description": "Enter the serial port (e.g., COM3 or /dev/ttyUSB0):",
+      "default": ""
+    }
+  ],
+} 

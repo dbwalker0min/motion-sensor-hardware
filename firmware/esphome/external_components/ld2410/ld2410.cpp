@@ -142,6 +142,7 @@ static constexpr uint8_t CMD_ENABLE_CONF = 0xFF;
 static constexpr uint8_t CMD_DISABLE_CONF = 0xFE;
 static constexpr uint8_t CMD_ENABLE_ENG = 0x62;
 static constexpr uint8_t CMD_DISABLE_ENG = 0x63;
+static constexpr uint8_t CMD_AUTOCALIBRATE = 0x0B;
 static constexpr uint8_t CMD_MAXDIST_DURATION = 0x60;
 static constexpr uint8_t CMD_QUERY = 0x61;
 static constexpr uint8_t CMD_GATE_SENS = 0x64;
@@ -163,6 +164,9 @@ static constexpr uint8_t CMD_DURATION_VALUE = 0x02;
 // Bitmasks for target states
 static constexpr uint8_t MOVE_BITMASK = 0x01;
 static constexpr uint8_t STILL_BITMASK = 0x02;
+static constexpr uint8_t TARGET_AUTOCAL_ONGOING = 0x04;
+static constexpr uint8_t TARGET_AUTOCAL_SUCCESS = 0x05;
+static constexpr uint8_t TARGET_AUTOCAL_FAILURE = 0x06;
 // Header & Footer size
 static constexpr uint8_t HEADER_FOOTER_SIZE = 4;
 // Command Header & Footer
@@ -216,6 +220,7 @@ void LD2410Component::dump_config() {
   ESP_LOGCONFIG(TAG, "Text Sensors:");
   LOG_TEXT_SENSOR("  ", "Mac", this->mac_text_sensor_);
   LOG_TEXT_SENSOR("  ", "Version", this->version_text_sensor_);
+  LOG_TEXT_SENSOR("  ", "AutoCalibrationStatus", this->auto_calibration_status_text_sensor_);
 #endif
 #ifdef USE_NUMBER
   ESP_LOGCONFIG(TAG, "Numbers:");
@@ -260,12 +265,17 @@ void LD2410Component::read_all_info() {
   this->query_light_control_();
   this->query_parameters_();
   this->set_config_mode_(false);
-#ifdef USE_SELECT
-  const auto baud_rate = std::to_string(this->parent_->get_baud_rate());
-  if (this->baud_rate_select_ != nullptr) {
-    this->baud_rate_select_->publish_state(baud_rate);
-  }
-#endif
+  #ifdef USE_SELECT
+    const auto baud_rate = std::to_string(this->parent_->get_baud_rate());
+    if (this->baud_rate_select_ != nullptr) {
+      this->baud_rate_select_->publish_state(baud_rate);
+    }
+  #endif
+  #ifdef USE_NUMBER
+    if (this->autocalibrate_seconds_number_ != nullptr) {
+      this->autocalibrate_seconds_number_->publish_state(this->get_autocal_seconds());
+    }
+  #endif
 }
 
 void LD2410Component::restart_and_read_all_info() {
@@ -323,15 +333,37 @@ void LD2410Component::handle_periodic_data_() {
     this->engineering_mode_switch_->publish_state(engineering_mode);
   }
 #endif
+/*
+  Target states: 9th
+  0x00 = No target
+  0x01 = Moving targets
+  0x02 = Still targets
+  0x03 = Moving+Still targets
+  0x04 = Auto-calibration ongoing
+  0x05 = Auto-calibration success
+  0x06 = Auto-calibration failure
+*/
+// NOTE: target_state_raw changes every frame; avoid verbose logging to prevent log flooding.
+uint8_t target_state = this->buffer_data_[TARGET_STATES];
+#ifdef USE_TEXT_SENSOR
+if (target_state >= TARGET_AUTOCAL_ONGOING) {
+  // Set the text sensor state for auto-calibration status
+    const char* auto_cal_state = "Unknown";
+    if (target_state <= TARGET_AUTOCAL_FAILURE) {
+            static const char* states[] = {"Ongoing", "Success", "Failure"};
+            auto_cal_state = states[target_state - TARGET_AUTOCAL_ONGOING];
+    }
+    if (this->auto_calibration_status_text_sensor_ != nullptr) {
+      // Get the old value
+      const char* old_state = this->auto_calibration_status_text_sensor_->state.c_str();
+      // Only publish if changed to reduce log spam
+      if (std::strcmp(old_state, auto_cal_state) != 0)
+        this->auto_calibration_status_text_sensor_->publish_state(auto_cal_state);
+    }
+  target_state = 0x00;  // During auto-calibration, report no target
+}
+#endif
 #ifdef USE_BINARY_SENSOR
-  /*
-    Target states: 9th
-    0x00 = No target
-    0x01 = Moving targets
-    0x02 = Still targets
-    0x03 = Moving+Still targets
-  */
-  char target_state = this->buffer_data_[TARGET_STATES];
   if (this->target_binary_sensor_ != nullptr) {
     this->target_binary_sensor_->publish_state(target_state != 0x00);
   }
@@ -444,6 +476,10 @@ bool LD2410Component::handle_ack_data_() {
         ESP_LOGE(TAG, "Change baud rate to %s and reinstall", this->baud_rate_select_->state.c_str());
       }
 #endif
+      break;
+    
+    case CMD_AUTOCALIBRATE:
+      ESP_LOGV(TAG, "Auto-calibrate");
       break;
 
     case CMD_QUERY_VERSION: {
@@ -657,6 +693,23 @@ void LD2410Component::set_engineering_mode(bool enable) {
   this->set_config_mode_(true);
   this->send_command_(cmd, nullptr, 0);
   this->set_config_mode_(false);
+}
+
+void LD2410Component::autocalibrate() {
+  this->autocalibrate(this->autocal_seconds_);
+}
+
+void LD2410Component::autocalibrate(uint16_t cal_time_seconds) {
+  const uint8_t cmd = CMD_AUTOCALIBRATE;
+  const uint8_t payload[2] = {lowbyte(cal_time_seconds), highbyte(cal_time_seconds)};
+  this->set_config_mode_(true);
+  this->send_command_(cmd, payload, 2);
+  this->set_config_mode_(false);
+  #ifdef USE_TEXT_SENSOR
+  if (this->auto_calibration_status_text_sensor_ != nullptr) {
+    this->auto_calibration_status_text_sensor_->publish_state("Queued");
+  }
+  #endif
 }
 
 void LD2410Component::factory_reset() {

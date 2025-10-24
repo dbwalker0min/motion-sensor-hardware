@@ -17,8 +17,12 @@ from .. import CONF_LD2410_ID, LD2410Component, ld2410_ns
 FactoryResetButton = ld2410_ns.class_("FactoryResetButton", button.Button)
 QueryButton = ld2410_ns.class_("QueryButton", button.Button)
 RestartButton = ld2410_ns.class_("RestartButton", button.Button)
+AutocalibrateButton = ld2410_ns.class_("AutocalibrateButton", button.Button)
+
+ICON_PLAY_CIRCLE = "mdi:play-circle"
 
 CONF_QUERY_PARAMS = "query_params"
+CONF_AUTOCALIBRATE = "autocalibrate"
 
 CONFIG_SCHEMA = {
     cv.GenerateID(CONF_LD2410_ID): cv.use_id(LD2410Component),
@@ -39,6 +43,11 @@ CONFIG_SCHEMA = {
         entity_category=ENTITY_CATEGORY_DIAGNOSTIC,
         icon=ICON_DATABASE,
     ),
+    cv.Optional(CONF_AUTOCALIBRATE): button.button_schema(
+        AutocalibrateButton,
+        entity_category=ENTITY_CATEGORY_DIAGNOSTIC,
+        icon=ICON_PLAY_CIRCLE,
+    ),
 }
 
 
@@ -56,3 +65,7 @@ async def to_code(config):
         b = await button.new_button(query_params_config)
         await cg.register_parented(b, config[CONF_LD2410_ID])
         cg.add(ld2410_component.set_query_button(b))
+    if autocalibrate_config := config.get(CONF_AUTOCALIBRATE):
+        b = await button.new_button(autocalibrate_config)
+        await cg.register_parented(b, config[CONF_LD2410_ID])
+        cg.add(ld2410_component.set_autocalibrate_button(b))
